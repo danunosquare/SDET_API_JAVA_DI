@@ -8,12 +8,12 @@
       <![CDATA[{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-11-10T16:37:47 CST" name="Default suite" finished-at="2022-11-10T16:37:53 CST" duration-ms="5807">
+  <suite started-at="2022-11-10T17:36:33 CST" name="Suite" finished-at="2022-11-10T17:36:39 CST" duration-ms="6036">
     <groups>
     </groups>
-    <test started-at="2022-11-10T16:37:47 CST" name="Default test" finished-at="2022-11-10T16:37:53 CST" duration-ms="5807">
+    <test started-at="2022-11-10T17:36:33 CST" name="Test" finished-at="2022-11-10T17:36:39 CST" duration-ms="6036">
       <class name="com.unosquare.FirstAPIGetTest">
-        <test-method signature="testFirsGetUsingHTTPObjects()[pri:0, instance:com.unosquare.FirstAPIGetTest@73ee04c8]" started-at="2022-11-10T16:37:47 CST" name="testFirsGetUsingHTTPObjects" finished-at="2022-11-10T16:37:53 CST" duration-ms="5727" status="PASS">
+        <test-method signature="testFirsGetUsingHTTPObjects()[pri:0, instance:com.unosquare.FirstAPIGetTest@3c9754d8]" started-at="2022-11-10T17:36:33 CST" name="testFirsGetUsingHTTPObjects" finished-at="2022-11-10T17:36:39 CST" duration-ms="5952" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Sucess 200 validation]]>
@@ -24,6 +24,6 @@
           </reporter-output>
         </test-method> <!-- testFirsGetUsingHTTPObjects -->
       </class> <!-- com.unosquare.FirstAPIGetTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
