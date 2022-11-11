@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Sucess 201 validation]]>
+    </line>
     <line>
       <![CDATA[Sucess 200 validation]]>
     </line>
@@ -8,12 +11,19 @@
       <![CDATA[{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-11-10T17:36:33 CST" name="Suite" finished-at="2022-11-10T17:36:39 CST" duration-ms="6036">
+  <suite started-at="2022-11-11T17:20:23 CST" name="Suite" finished-at="2022-11-11T17:20:30 CST" duration-ms="6516">
     <groups>
     </groups>
-    <test started-at="2022-11-10T17:36:33 CST" name="Test" finished-at="2022-11-10T17:36:39 CST" duration-ms="6036">
+    <test started-at="2022-11-11T17:20:23 CST" name="Test" finished-at="2022-11-11T17:20:30 CST" duration-ms="6516">
       <class name="com.unosquare.FirstAPIGetTest">
-        <test-method signature="testFirsGetUsingHTTPObjects()[pri:0, instance:com.unosquare.FirstAPIGetTest@3c9754d8]" started-at="2022-11-10T17:36:33 CST" name="testFirsGetUsingHTTPObjects" finished-at="2022-11-10T17:36:39 CST" duration-ms="5952" status="PASS">
+        <test-method signature="f_post_Gherking()[pri:0, instance:com.unosquare.FirstAPIGetTest@3bf7ca37]" started-at="2022-11-11T17:20:23 CST" name="f_post_Gherking" finished-at="2022-11-11T17:20:29 CST" duration-ms="6004" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Sucess 201 validation]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- f_post_Gherking -->
+        <test-method signature="testFirsGetUsingHTTPObjects()[pri:0, instance:com.unosquare.FirstAPIGetTest@3bf7ca37]" started-at="2022-11-11T17:20:29 CST" name="testFirsGetUsingHTTPObjects" finished-at="2022-11-11T17:20:30 CST" duration-ms="428" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Sucess 200 validation]]>
