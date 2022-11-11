@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +104,17 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.unosquare.FirstAPIGetTest" class="method navigator-link" hash-for-method="f_post_Gherking">f_post_Gherking</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.unosquare.FirstAPIGetTest" class="method navigator-link" hash-for-method="f_Gherking_get">f_Gherking_get</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.unosquare.SecondAPIGETTest" class="method navigator-link" hash-for-method="f_Gherking_get_list">f_Gherking_get_list</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.unosquare.SecondAPIGETTest" class="method navigator-link" hash-for-method="getUserRequest">getUserRequest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -132,9 +142,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="f_post_Gherking">
-                  </a> <!-- f_post_Gherking -->
-                  <span class="method-name">f_post_Gherking</span>
+                  <a name="f_Gherking_get">
+                  </a> <!-- f_Gherking_get -->
+                  <span class="method-name">f_Gherking_get</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -142,6 +152,28 @@
                   <a name="testFirsGetUsingHTTPObjects">
                   </a> <!-- testFirsGetUsingHTTPObjects -->
                   <span class="method-name">testFirsGetUsingHTTPObjects</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.unosquare.SecondAPIGETTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="f_Gherking_get_list">
+                  </a> <!-- f_Gherking_get_list -->
+                  <span class="method-name">f_Gherking_get_list</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getUserRequest">
+                  </a> <!-- getUserRequest -->
+                  <span class="method-name">getUserRequest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -158,6 +190,7 @@
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;com.unosquare.SecondAPIGETTest&quot;/&gt;
       &lt;class name=&quot;com.unosquare.FirstAPIGetTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
@@ -172,7 +205,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -198,15 +231,23 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'f_post_Gherking')
-data.setCell(0, 2, 'com.unosquare.FirstAPIGetTest')
-data.setCell(0, 3, 6004);
+data.setCell(0, 1, 'f_Gherking_get_list')
+data.setCell(0, 2, 'com.unosquare.SecondAPIGETTest')
+data.setCell(0, 3, 5514);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testFirsGetUsingHTTPObjects')
-data.setCell(1, 2, 'com.unosquare.FirstAPIGetTest')
-data.setCell(1, 3, 428);
+data.setCell(1, 1, 'getUserRequest')
+data.setCell(1, 2, 'com.unosquare.SecondAPIGETTest')
+data.setCell(1, 3, 780);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testFirsGetUsingHTTPObjects')
+data.setCell(2, 2, 'com.unosquare.FirstAPIGetTest')
+data.setCell(2, 3, 360);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'f_Gherking_get')
+data.setCell(3, 2, 'com.unosquare.FirstAPIGetTest')
+data.setCell(3, 3, 288);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -223,6 +264,13 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
+              <span class="reporter-method-name">getUserRequest</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Sucess 200 validation</span>
+                <span class="reporter-method-output">{"data":{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
               <span class="reporter-method-name">testFirsGetUsingHTTPObjects</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Sucess 200 validation</span>
@@ -230,9 +278,15 @@ return data;
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">f_post_Gherking</span>
+              <span class="reporter-method-name">f_Gherking_get_list</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Sucess 201 validation</span>
+                <span class="reporter-method-output">Sucess 200 validation</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">f_Gherking_get</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Sucess 200 validation</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -250,14 +304,25 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.unosquare.FirstAPIGetTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.unosquare.SecondAPIGETTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">f_post_Gherking</span>
+                <span class="method-name">f_Gherking_get_list</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <span class="method-name">getUserRequest</span>
+                <span class="method-start">5519 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.unosquare.FirstAPIGetTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">f_Gherking_get</span>
+                <span class="method-start">6304 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">testFirsGetUsingHTTPObjects</span>
-                <span class="method-start">6008 ms</span>
+                <span class="method-start">6593 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
