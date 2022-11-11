@@ -8,6 +8,8 @@ import org.testng.annotations.Test;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import org.json.JSONObject;
+import io.restassured.http.ContentType;
 
 public class FirstAPIGetTest {
 
@@ -33,4 +35,25 @@ public class FirstAPIGetTest {
 		Reporter.log(response.body().asString());
 
 	}
+	
+	@Test
+	  public void f_post_Gherking() {
+		  JSONObject jsonObject = new JSONObject();
+		  jsonObject.put("name","JohnAPI");
+		  jsonObject.put("job","QA");
+		  
+		  RestAssured.given().contentType(ContentType.JSON).baseUri("https://reqres.in/api/")
+		  .and().body(jsonObject.toString())
+		  .when()
+		  	.post("/users")
+		  .then()
+		  	.assertThat().statusCode(201)
+		  	.assertThat().contentType(ContentType.JSON)
+		  	.assertThat().body("name", Matchers.equalTo("JohnAPI"));
+		  
+		  Reporter.log("Sucess 201 validation"); 
+
+	  }
+	
+	
 }
