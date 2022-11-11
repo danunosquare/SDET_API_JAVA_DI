@@ -36,23 +36,20 @@ public class FirstAPIGetTest {
 
 	}
 	
-	@Test
-	  public void f_post_Gherking() {
-		  JSONObject jsonObject = new JSONObject();
-		  jsonObject.put("name","JohnAPI");
-		  jsonObject.put("job","QA");
+	  @Test
+	  public void f_Gherking_get() {
 		  
 		  RestAssured.given().contentType(ContentType.JSON).baseUri("https://reqres.in/api/")
-		  .and().body(jsonObject.toString())
 		  .when()
-		  	.post("/users")
+		  	.get("/users/2")
 		  .then()
-		  	.assertThat().statusCode(201)
+		  	.assertThat().statusCode(200)
 		  	.assertThat().contentType(ContentType.JSON)
-		  	.assertThat().body("name", Matchers.equalTo("JohnAPI"));
+		  	.assertThat().body("data.first_name", Matchers.equalTo("Janet"))
+		  	.assertThat().body("data.last_name", Matchers.equalTo("Weaver"));
 		  
-		  Reporter.log("Sucess 201 validation"); 
-
+		  Reporter.log("Sucess 200 validation"); 
+		
 	  }
 	
 	
