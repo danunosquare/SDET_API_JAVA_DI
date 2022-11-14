@@ -5,8 +5,11 @@
     <classes>
       <!--class name="com.unosquare.SecondAPIGETTest"/>
       <class name="com.unosquare.FirstAPIGetTest"/>
-      <class name="com.unosquare.FirstAPIPOST"/-->
-      <class name="com.unosquare.PostUsingJsonObject"/>
+      <class name="com.unosquare.FirstAPIPOST"/>
+      <class name="com.unosquare.PostUsingJsonObject"/-->
+      <class name="com.unosquare.PostRefactorizedUsingAPICore"/>
+      
+      
       
       
            

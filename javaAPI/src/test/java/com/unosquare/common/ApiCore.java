@@ -1,4 +1,4 @@
-package com.unosquare;
+package com.unosquare.common;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -7,38 +7,12 @@ import java.io.IOException;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
-import org.testng.Reporter;
-import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
-
-
-
-public class PostUsingJsonObject {
-
-	@Test
-	public void testUsingJson () {
-		
-		JSONObject in = getJsonObjectFromFile("src/test/resources/jsonFiles/CreateUser.json");
-		
-		String str = RestAssured.baseURI = "https://reqres.in";
-		String path = "/api/users";
-		
-		Response res = RestAssured.given().contentType(ContentType.JSON).baseUri(str)
-			  .and().body(in.toString())
-			  .when()
-			  	.post(path);
-	
-		Reporter.log("Response body " + res.getBody().print());
-		Reporter.log("Response code " + res.getStatusCode());
-		Reporter.log("Json sent: " + in );
-		Reporter.log("URL post " + str + path);
-		
-		
-	}
+public class ApiCore {
 	
 	public JSONObject getJsonObjectFromFile (String path) {
 		JSONParser json = new JSONParser();
@@ -58,5 +32,23 @@ public class PostUsingJsonObject {
 		return object;
 	}
 	
+	public Response sentPostRequest(String postURI, String postPath, String jsonPath) throws Exception {
+		JSONObject in = getJsonObjectFromFile(jsonPath);
+		if(postURI == null) {
+			throw new Exception("URI cannot be null");
+		}
+		if(postPath == null) {
+			postPath = "";
+		}
+		
+		Response res = RestAssured.given().contentType(ContentType.JSON).baseUri(postURI)
+			  .and().body(in.toString())
+			  .when()
+			  	.post(postPath);
+		
+		return res;
+	}
 	
+	
+
 }
