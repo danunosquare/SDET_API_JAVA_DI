@@ -3,9 +3,12 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.unosquare.SecondAPIGETTest"/>
+      <!--class name="com.unosquare.SecondAPIGETTest"/>
       <class name="com.unosquare.FirstAPIGetTest"/>
-      <class name="com.unosquare.FirstAPIPOST"/>
+      <class name="com.unosquare.FirstAPIPOST"/-->
+      <class name="com.unosquare.PostUsingJsonObject"/>
+      
+      
            
     </classes>
   </test> <!-- Test -->

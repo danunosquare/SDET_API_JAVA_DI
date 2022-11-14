@@ -1,101 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Sucess 200 validation]]>
+      <![CDATA[Response body {"name":"Daniel","job":"QA","id":"315","createdAt":"2022-11-14T18:13:46.673Z"}]]>
     </line>
     <line>
-      <![CDATA[Sucess 200 validation]]>
+      <![CDATA[Response code 201]]>
     </line>
     <line>
-      <![CDATA[{"data":{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}]]>
+      <![CDATA[Json sent: {"name":"Daniel","job":"QA"}]]>
     </line>
     <line>
-      <![CDATA[Sucess 200 validation]]>
-    </line>
-    <line>
-      <![CDATA[Sucess 200 validation]]>
-    </line>
-    <line>
-      <![CDATA[{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}]]>
-    </line>
-    <line>
-      <![CDATA[Sucess 201 validation]]>
-    </line>
-    <line>
-      <![CDATA[{"name":"JohnAPI","job":"QA","id":"435","createdAt":"2022-11-14T16:14:35.287Z"}]]>
-    </line>
-    <line>
-      <![CDATA[JohnAPI]]>
-    </line>
-    <line>
-      <![CDATA[{"name":"JohnAPI","job":"QA","id":"435","createdAt":"2022-11-14T16:14:35.287Z"}]]>
+      <![CDATA[URL post https://reqres.in/api//api/users]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-11-14T10:14:54 CST" name="Suite" finished-at="2022-11-14T10:15:03 CST" duration-ms="8952">
+  <suite started-at="2022-11-14T12:14:10 CST" name="Default suite" finished-at="2022-11-14T12:14:15 CST" duration-ms="4970">
     <groups>
     </groups>
-    <test started-at="2022-11-14T10:14:54 CST" name="Test" finished-at="2022-11-14T10:15:03 CST" duration-ms="8952">
-      <class name="com.unosquare.FirstAPIGetTest">
-        <test-method signature="f_Gherking_get()[pri:0, instance:com.unosquare.FirstAPIGetTest@3bd82cf5]" started-at="2022-11-14T10:15:01 CST" name="f_Gherking_get" finished-at="2022-11-14T10:15:01 CST" duration-ms="371" status="PASS">
+    <test started-at="2022-11-14T12:14:10 CST" name="Default test" finished-at="2022-11-14T12:14:15 CST" duration-ms="4970">
+      <class name="com.unosquare.PostUsingJsonObject">
+        <test-method signature="testUsingJson()[pri:0, instance:com.unosquare.PostUsingJsonObject@2e55dd0c]" started-at="2022-11-14T12:14:10 CST" name="testUsingJson" finished-at="2022-11-14T12:14:15 CST" duration-ms="4888" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Sucess 200 validation]]>
+              <![CDATA[Response body {"name":"Daniel","job":"QA","id":"315","createdAt":"2022-11-14T18:13:46.673Z"}]]>
+            </line>
+            <line>
+              <![CDATA[Response code 201]]>
+            </line>
+            <line>
+              <![CDATA[Json sent: {"name":"Daniel","job":"QA"}]]>
+            </line>
+            <line>
+              <![CDATA[URL post https://reqres.in/api//api/users]]>
             </line>
           </reporter-output>
-        </test-method> <!-- f_Gherking_get -->
-        <test-method signature="testFirsGetUsingHTTPObjects()[pri:0, instance:com.unosquare.FirstAPIGetTest@3bd82cf5]" started-at="2022-11-14T10:15:01 CST" name="testFirsGetUsingHTTPObjects" finished-at="2022-11-14T10:15:02 CST" duration-ms="412" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Sucess 200 validation]]>
-            </line>
-            <line>
-              <![CDATA[{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testFirsGetUsingHTTPObjects -->
-      </class> <!-- com.unosquare.FirstAPIGetTest -->
-      <class name="com.unosquare.SecondAPIGETTest">
-        <test-method signature="f_Gherking_get_list()[pri:0, instance:com.unosquare.SecondAPIGETTest@26794848]" started-at="2022-11-14T10:14:54 CST" name="f_Gherking_get_list" finished-at="2022-11-14T10:15:01 CST" duration-ms="6243" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Sucess 200 validation]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- f_Gherking_get_list -->
-        <test-method signature="getUserRequest()[pri:0, instance:com.unosquare.SecondAPIGETTest@26794848]" started-at="2022-11-14T10:15:01 CST" name="getUserRequest" finished-at="2022-11-14T10:15:01 CST" duration-ms="374" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Sucess 200 validation]]>
-            </line>
-            <line>
-              <![CDATA[{"data":{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- getUserRequest -->
-      </class> <!-- com.unosquare.SecondAPIGETTest -->
-      <class name="com.unosquare.FirstAPIPOST">
-        <test-method signature="testPostRequestGivenWhenThen()[pri:0, instance:com.unosquare.FirstAPIPOST@544fa968]" started-at="2022-11-14T10:15:02 CST" name="testPostRequestGivenWhenThen" finished-at="2022-11-14T10:15:02 CST" duration-ms="567" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Sucess 201 validation]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testPostRequestGivenWhenThen -->
-        <test-method signature="testPostRequestHTMLObject()[pri:0, instance:com.unosquare.FirstAPIPOST@544fa968]" started-at="2022-11-14T10:15:02 CST" name="testPostRequestHTMLObject" finished-at="2022-11-14T10:15:03 CST" duration-ms="885" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[{"name":"JohnAPI","job":"QA","id":"435","createdAt":"2022-11-14T16:14:35.287Z"}]]>
-            </line>
-            <line>
-              <![CDATA[JohnAPI]]>
-            </line>
-            <line>
-              <![CDATA[{"name":"JohnAPI","job":"QA","id":"435","createdAt":"2022-11-14T16:14:35.287Z"}]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testPostRequestHTMLObject -->
-      </class> <!-- com.unosquare.FirstAPIPOST -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- testUsingJson -->
+      </class> <!-- com.unosquare.PostUsingJsonObject -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
