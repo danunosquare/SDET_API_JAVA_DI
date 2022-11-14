@@ -5,6 +5,8 @@
     <classes>
       <class name="com.unosquare.SecondAPIGETTest"/>
       <class name="com.unosquare.FirstAPIGetTest"/>
+      <class name="com.unosquare.FirstAPIPOST"/>
+           
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
