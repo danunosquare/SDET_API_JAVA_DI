@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.unosquare.PostRefactorizedUsingAPICore">
+      <class name="com.unosquare.FinalSuiteTest">
         <methods>
+          <include name="getSingleUserWithParameterTest"/>
           <include name="before"/>
-          <include name="testLogin"/>
+          <include name="getSingleResourceWithParameterTest"/>
         </methods>
-      </class> <!-- com.unosquare.PostRefactorizedUsingAPICore -->
+      </class> <!-- com.unosquare.FinalSuiteTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
