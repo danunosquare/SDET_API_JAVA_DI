@@ -27,17 +27,15 @@ public class FinalSuiteTest {
 	}
 	
 	@Test
-	@Parameters("id")
-	public void getSingleUserWithParameterTest (String id) throws Exception{
+	public void getSingleUserTest () throws Exception{
 		int codeExpected = 200;
-		String path = "/api/users/" + id;
+		String path = "/api/users/2";
 	
 		Response res = RestAssured.given().contentType(ContentType.JSON).baseUri(URI)
 		  .when()
 		  	.get(path);
 		Assert.assertEquals(res.getStatusCode(), codeExpected);
-		Assert.assertEquals(res.getBody().jsonPath().getString("data.id"), id);
-		Reporter.log("body with user " + id + res.getBody().print());
+		Reporter.log("body with user 2"+ res.getBody().print());
 	}
 	
 	@Test
@@ -76,9 +74,8 @@ public class FinalSuiteTest {
 	}
 	
 	@Test
-	@Parameters("resource")
-	public void getSingleResourceWithParameterTest (String resource) throws Exception{
-		String path = "/api/unknown/" + resource;
+	public void getSingleResourceTest () throws Exception{
+		String path = "/api/unknown/3";
 		int codeExpected = 200;
 		String colorExpected = "true red";
 		Response test = RestAssured.given().contentType(ContentType.JSON).baseUri(URI)

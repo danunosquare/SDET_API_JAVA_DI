@@ -290,39 +290,39 @@ data.addRows(9);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'getResourceListTest')
 data.setCell(0, 2, 'com.unosquare.FinalSuiteTest')
-data.setCell(0, 3, 6018);
+data.setCell(0, 3, 4336);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'postCreateUserTest')
+data.setCell(1, 1, 'postSuccessfulLoginTest')
 data.setCell(1, 2, 'com.unosquare.FinalSuiteTest')
-data.setCell(1, 3, 604);
+data.setCell(1, 3, 1100);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'putUpdateUserTest')
+data.setCell(2, 1, 'postRegisterTest')
 data.setCell(2, 2, 'com.unosquare.FinalSuiteTest')
-data.setCell(2, 3, 561);
+data.setCell(2, 3, 932);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'postRegisterTest')
+data.setCell(3, 1, 'postCreateUserTest')
 data.setCell(3, 2, 'com.unosquare.FinalSuiteTest')
-data.setCell(3, 3, 538);
+data.setCell(3, 3, 819);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'postSuccessfulLoginTest')
+data.setCell(4, 1, 'getSingleResourceWithParameterTest')
 data.setCell(4, 2, 'com.unosquare.FinalSuiteTest')
-data.setCell(4, 3, 502);
+data.setCell(4, 3, 587);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'postFailLoginTest')
+data.setCell(5, 1, 'getSingleUserWithParameterTest')
 data.setCell(5, 2, 'com.unosquare.FinalSuiteTest')
-data.setCell(5, 3, 491);
+data.setCell(5, 3, 576);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'getSingleResourceWithParameterTest')
+data.setCell(6, 1, 'postFailLoginTest')
 data.setCell(6, 2, 'com.unosquare.FinalSuiteTest')
-data.setCell(6, 3, 415);
+data.setCell(6, 3, 535);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'getSingleUserWithParameterTest')
+data.setCell(7, 1, 'putUpdateUserTest')
 data.setCell(7, 2, 'com.unosquare.FinalSuiteTest')
-data.setCell(7, 3, 318);
+data.setCell(7, 3, 483);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'getUserListTest')
 data.setCell(8, 2, 'com.unosquare.FinalSuiteTest')
-data.setCell(8, 3, 287);
+data.setCell(8, 3, 273);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -339,15 +339,15 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">postCreateUserTest</span>
+              <span class="reporter-method-name">getResourceListTest</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Response body {"name":"Daniel","job":"QA","id":"902","createdAt":"2022-11-15T15:00:22.415Z"}</span>
+                <span class="reporter-method-output">Response body {"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"name":"cerulean","year":2000,"color":"#98B2D1","pantone_value":"15-4020"},{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},{"id":3,"name":"true red","year":2002,"color":"#BF1932","pantone_value":"19-1664"},{"id":4,"name":"aqua sky","year":2003,"color":"#7BC4C4","pantone_value":"14-4811"},{"id":5,"name":"tigerlily","year":2004,"color":"#E2583E","pantone_value":"17-1456"},{"id":6,"name":"blue turquoise","year":2005,"color":"#53B0AE","pantone_value":"15-5217"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">getSingleResourceWithParameterTest(3)</span>
+              <span class="reporter-method-name">postFailLoginTest</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Response body {"data":{"id":3,"name":"true red","year":2002,"color":"#BF1932","pantone_value":"19-1664"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}</span>
+                <span class="reporter-method-output">Response body {"error":"Missing password"}</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -358,16 +358,9 @@ return data;
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">postSuccessfulLoginTest</span>
+              <span class="reporter-method-name">postCreateUserTest</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Response body {"token":"QpwL5tke4Pnpja7X4"}</span>
-                <span class="reporter-method-output">token: QpwL5tke4Pnpja7X4</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">getResourceListTest</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Response body {"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"name":"cerulean","year":2000,"color":"#98B2D1","pantone_value":"15-4020"},{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},{"id":3,"name":"true red","year":2002,"color":"#BF1932","pantone_value":"19-1664"},{"id":4,"name":"aqua sky","year":2003,"color":"#7BC4C4","pantone_value":"14-4811"},{"id":5,"name":"tigerlily","year":2004,"color":"#E2583E","pantone_value":"17-1456"},{"id":6,"name":"blue turquoise","year":2005,"color":"#53B0AE","pantone_value":"15-5217"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}</span>
+                <span class="reporter-method-output">Response body {"name":"Daniel","job":"QA","id":"696","createdAt":"2022-11-15T18:59:00.049Z"}</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -377,9 +370,10 @@ return data;
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">postFailLoginTest</span>
+              <span class="reporter-method-name">postSuccessfulLoginTest</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Response body {"error":"Missing password"}</span>
+                <span class="reporter-method-output">Response body {"token":"QpwL5tke4Pnpja7X4"}</span>
+                <span class="reporter-method-output">token: QpwL5tke4Pnpja7X4</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -391,7 +385,13 @@ return data;
             <div class="reporter-method-div">
               <span class="reporter-method-name">putUpdateUserTest</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Response body {"name":"zeus","job":"president","id":"831","createdAt":"2022-11-15T15:00:24.535Z"}</span>
+                <span class="reporter-method-output">Response body {"name":"zeus","job":"president","id":"606","createdAt":"2022-11-15T18:59:03.184Z"}</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">getSingleResourceWithParameterTest(3)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Response body {"data":{"id":3,"name":"true red","year":2002,"color":"#BF1932","pantone_value":"19-1664"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -416,39 +416,39 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">getResourceListTest</span>
-                <span class="method-start">77 ms</span>
+                <span class="method-start">70 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getSingleResourceWithParameterTest(3)</span>
-                <span class="method-start">6099 ms</span>
+                <span class="method-start">4413 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getSingleUserWithParameterTest(3)</span>
-                <span class="method-start">6516 ms</span>
+                <span class="method-start">5002 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getUserListTest</span>
-                <span class="method-start">6836 ms</span>
+                <span class="method-start">5578 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">postCreateUserTest</span>
-                <span class="method-start">7124 ms</span>
+                <span class="method-start">5853 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">postFailLoginTest</span>
-                <span class="method-start">7729 ms</span>
+                <span class="method-start">6674 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">postRegisterTest</span>
-                <span class="method-start">8221 ms</span>
+                <span class="method-start">7209 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">postSuccessfulLoginTest</span>
-                <span class="method-start">8760 ms</span>
+                <span class="method-start">8143 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">putUpdateUserTest</span>
-                <span class="method-start">9263 ms</span>
+                <span class="method-start">9244 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
