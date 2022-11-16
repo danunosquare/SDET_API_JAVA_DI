@@ -7,7 +7,7 @@ import java.util.List;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Parameters;
+
 import org.testng.annotations.Test;
 
 import com.unosquare.common.ApiCore;
